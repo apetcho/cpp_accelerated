@@ -51,5 +51,6 @@ endfunction(makeExampleExec name)
 #make_failExec(failsVec2)
 # make_failExec(failsIters)
 #build_failExec(failsList)
-makeExampleExec(pics)
+#makeExampleExec(pics)
+makeExampleExec(split)
 
