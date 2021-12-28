@@ -12,3 +12,24 @@ std::istream& read_student_info(std::istream& stream, StudentInfo& info){
     read_homework(stream, info.homework);
     return stream;
 }
+
+std::istream& read_homework(
+    std::istream& stream,
+    std::vector<double>& homework)
+{
+    if(stream){
+        /* get rid of previous contents */
+        homework.clear();
+
+        /* read homework grades */
+        double x;
+        while(stream >> x){
+            homework.push_back(x);
+        }
+        
+        /* clear the stream so that input will work for the next student */
+        stream.clear();
+    }
+
+    return stream;
+}
