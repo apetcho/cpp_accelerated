@@ -52,5 +52,7 @@ endfunction(makeExampleExec name)
 # make_failExec(failsIters)
 #build_failExec(failsList)
 #makeExampleExec(pics)
-makeExampleExec(split)
+#makeExampleExec(split)
+
+add_executable(splitMain2 ${CH05_DIR}/splitMain2.cpp)
 
