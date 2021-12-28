@@ -14,6 +14,6 @@ struct StudentInfo{
 
 bool compare_student_info(const StudentInfo&, const StudentInfo&);
 std::istream& read_student_info(std::istream&, StudentInfo&);
-std::istream& read_homework(std::iostream&, std::vector<double>&)
+std::istream& read_homework(std::istream&, std::vector<double>&)
 
 #endif
