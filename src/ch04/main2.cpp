@@ -104,7 +104,7 @@ int main(){
     std::cout << std::endl;
     for(vsize_type i=0; i != students.size(); ++i){
         std::cout << "Computing " << students[i].name
-                << " final grade ..." << std::endl;
+                << "'s final grade ..." << std::endl;
         std::cout << students[i].name
             << std::string(maxlen+1 - students[i].name.size(), ' ');
         // compute and write the grade
