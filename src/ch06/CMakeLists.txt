@@ -21,3 +21,4 @@ add_executable(mySplit
 )
 
 add_executable(Palindrome palindrome.cpp)
+add_executable(URLExe urlsMain.cpp urls.cpp urls.hpp)
