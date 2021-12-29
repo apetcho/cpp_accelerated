@@ -3,7 +3,7 @@
 #include<string>
 #include<vector>
 
-#include "split.hpp"
+#include "./split.hpp"
 
 // --- MAIN DRIVER ---
 int main(){
