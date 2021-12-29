@@ -32,7 +32,7 @@ public:
     // data[i] = val
     T& operator[](size_type i){ return data[i]; } // could check validity of i
     // val = data[i]
-    const T& operator[](size-type i) const { return data[i]; }
+    const T& operator[](size_type i) const { return data[i]; }
 
     //
     void push_back(const T& t){
@@ -81,7 +81,7 @@ template<typename T>
 void Vec<T>::create(){
     data = nullptr;
     avail = nullptr;
-    limie = nullptr;
+    limit = nullptr;
 }
 
 //
@@ -131,7 +131,7 @@ void Vec<T>::grow(){
     // reset pointers to point to the newly allocated space
     data = new_data;
     avail = new_avail;
-    limit = data = new_size;
+    limit = data + new_size;
 }
 
 // ---
