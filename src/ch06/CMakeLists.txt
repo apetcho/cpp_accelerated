@@ -22,3 +22,12 @@ add_executable(mySplit
 
 add_executable(Palindrome palindrome.cpp)
 add_executable(URLExe urlsMain.cpp urls.cpp urls.hpp)
+
+# ----
+add_library(ganalysis
+    analysis.cpp grade.cpp gradeCheck.cpp
+    ../ch04/student_info.cpp ../ch04/median.cpp
+    ../ch04/median.hpp ../ch04/student_info.hpp
+    grade.hpp analysis.hpp)
+add_executable(gradeAnalysis gradeAnalysis.cpp)
+target_link_libraries(gradeAnalysis PRIVATE ganalysis)
