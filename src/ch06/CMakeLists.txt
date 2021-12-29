@@ -19,3 +19,5 @@ add_executable(mySplit
     split.cpp
     ../ch05/split.hpp
 )
+
+add_executable(Palindrome palindrome.cpp)
