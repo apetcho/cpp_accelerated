@@ -15,3 +15,9 @@ add_executable(GradeAnalyis gradeAnalysis.cpp
     Vec.hpp analysis.hpp studentInfo.hpp)
 
 target_link_libraries(GradeAnalyis PRIVATE analysis)
+
+# ---
+
+add_executable(Main3 main3.cpp studentInfo.cpp  grade.cpp grade.hpp
+    Vec.hpp studentInfo.hpp median.hpp)
+#target_link_libraries(main3 PRIVATE analysis)
